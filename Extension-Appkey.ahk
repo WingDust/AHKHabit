@@ -42,7 +42,7 @@ return
 
 
 ;启动Cmder.exe 同一个键是有先后触发的顺序的 
-AppsKey & 1::
+~AppsKey & 1::
 ;ToolTip 1
 Run E:\cmder\Cmder.exe ,C:/Users/Administrator/Desktop/
 return
@@ -58,16 +58,30 @@ Return
 AppsKey::Enter
 Return
 
+
 #IfWinActive  emacs
 AppsKey::Enter
+Return
+Escape::Escape
+Return
+#IfWinActive
+
+#IfWinActive  Terminal
+AppsKey::Send,{Enter}
 Return
 Escape::Send,{Escape}
 Return
 #IfWinActive
 
+;;#IfWinActive  ahk_exe Explorer.EXE
+;;AppsKey::Send ,{AppsKey}
+;;Return
+;;#IfWinActive
+
 #IfWinActive  Everything
 AppsKey::Send ,{AppsKey}
 Return
+#IfWinActive
 
 
 #IfWinActive,ahk_exe nvim-qt.exe
