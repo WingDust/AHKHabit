@@ -23,6 +23,7 @@ GroupAdd,ApptoEnter , ahk_exe Listary.exe
 GroupAdd,ApptoEnter , ahk_exe AutoHotkey.exe
 GroupAdd,ApptoEnter , ahk_exe WindowsTerminal.exe
 GroupAdd,ApptoEnter , ahk_exe pwsh.exe
+GroupAdd,ApptoEnter , ahk_exe SearchApp.exe
 
 
 GroupAdd,Quit , ahk_exe  cmd.exe
@@ -53,18 +54,21 @@ return
 AppsKey::
 Send {Enter}
 Return
+#IfWinActive
 
 #IfWinActive ahk_exe emacs.exe
 AppsKey::Enter
 Return
+#IfWinActive
 
-
+/*
 #IfWinActive  emacs
 AppsKey::Enter
 Return
 Escape::Escape
 Return
 #IfWinActive
+*/
 
 #IfWinActive  Terminal
 AppsKey::Send,{Enter}
@@ -78,10 +82,10 @@ Return
 ;;Return
 ;;#IfWinActive
 
-#IfWinActive  Everything
-AppsKey::Send ,{AppsKey}
-Return
-#IfWinActive
+;;#IfWinActive  Everything
+;;AppsKey::Send ,{AppsKey}
+;;Return
+;;#IfWinActive
 
 
 #IfWinActive,ahk_exe nvim-qt.exe
@@ -104,8 +108,6 @@ Return
 #IfWinActive, ahk_group Quit
 ^q::
 Send exit{Enter}
-;Send {Enter}
-
 Return
 #IfWinActive
 
@@ -150,25 +152,6 @@ k::Up
 AppsKey::Enter
 #IfWinActive
 
-#IfWinActive, ahk_class Progman
-j::Down
-#IfWinActive
-
-#IfWinActive, ahk_class Progman
-k::
-#IfWinActive
-
-#IfWinActive,SearchBarWindow
-k::
-
-
-#IfWinActive, ahk_class Progman
-h::Right
-#IfWinActive
-
-#IfWinActive, ahk_class Progman
-l::Left
-#IfWinActive
 
 
 
@@ -179,21 +162,21 @@ l::Left
 
 
 
-;/*
-#IfWinActive,ahk_exe Code.exe
-$+!f::
-    ; ToolTip,OutputVar
-    WinGet, OutputVar ,ID,ahk_exe atom.exe
-    ; ToolTip,%OutputVar%
-    WinActivate, ahk_id %OutputVar%
-    ; Send {Ctrl Alt v}
-    Send ^!v
-    ; Send AltTab
-    WinGet, OutputVar2 ,ID,ahk_exe Code.exe
-    ; ToolTip,OutputVar2
-    WinActivate,ahk_id %OutputVar2%
-return
-*/
+;;/*
+;#IfWinActive,ahk_exe Code.exe
+;$+!f::
+;    ; ToolTip,OutputVar
+;    WinGet, OutputVar ,ID,ahk_exe atom.exe
+;    ; ToolTip,%OutputVar%
+;    WinActivate, ahk_id %OutputVar%
+;    ; Send {Ctrl Alt v}
+;    Send ^!v
+;    ; Send AltTab
+;    WinGet, OutputVar2 ,ID,ahk_exe Code.exe
+;    ; ToolTip,OutputVar2
+;    WinActivate,ahk_id %OutputVar2%
+;return
+;*/
 
 
 ;/*实现在 imageGlass 中vim式的移动来达到翻页的效果
@@ -213,10 +196,10 @@ k::Up
 Return
 */
 
-
 ;/* 在Appskey键下能使用vim式按键移动
 #IfWinExist, ahk_class #32768
-j::Down
+j:: Send,{Down}
+Return
 
 #IfWinExist, ahk_class #32768
 k::Up
@@ -235,3 +218,71 @@ Return
 AppsKey::Enter
 Return
 */
+
+/* 在Appskey键下能使用vim式按键移动
+#IfWinActive ahk_class Progman
+j::Down
+Return
+
+#IfWinActive ahk_class Progman
+k::Up
+Return
+
+#IfWinActive ahk_class Progman
+h::Left
+Return
+
+#IfWinActive ahk_class Progman
+l::Right
+Return
+
+
+*/
+;/* 在Appskey键下能使用vim式按键移动
+;; #IfWinExist, VcXsrv X
+;; j::Down
+;; Return
+;; 
+;; #IfWinExist, VcXsrv X
+;; k::Up
+;; Return
+;; 
+;; #IfWinExist, VcXsrv X
+;; h::Left
+;; Return
+;; 
+;; #IfWinExist, VcXsrv X
+;; l::Right
+;; Return
+
+
+;;#IfWinActive VcXsrv X
+;;AppsKey::Enter
+;;Return
+*/
+
+;/*
+;;#If WinActive("ahk_class SysListView32")
+;;k::Up
+;;Return
+;;j::Down
+;;Return
+;;h::Left
+;;Return
+;;l::Right
+;;Return
+;;#If
+*/
+
+;/*
+#IfWinActive 哔哩哔哩动画
+^s::
+  Click , 1640,1060
+  Return
+F2::
+  Click ,404,83
+  Return
+#IfWinActive
+
+*/
+

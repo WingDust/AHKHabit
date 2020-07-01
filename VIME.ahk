@@ -2,7 +2,7 @@ SetTitleMatchMode,regex
 GroupAdd , Escheck ,ahk_exe nvim-qt.exe
 GroupAdd , Escheck ,ahk_exe Code.exe
 GroupAdd , Escheck ,ahk_exe emacs.exe
-
+GroupAdd , Escheck ,ahk_class Emacs
 
 IME_GetKeyboardLayoutName()
 {
