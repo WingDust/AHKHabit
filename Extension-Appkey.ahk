@@ -282,6 +282,13 @@ Return
 F2::
   Click ,404,83
   Return
+^l::
+  Click ,500,500
+  Click ,1890,535
+  Return
+^z::
+  Click, 21,10
+  Return
 #IfWinActive
 
 */
