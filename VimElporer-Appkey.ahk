@@ -61,6 +61,12 @@ AppsKey::Enter
 Return
 #IfWinActive
 
+#IfWinActive ahk_exe Code.exe
+^d::Send,{PgDn}
+^u::Send,{PgUp}
+Return
+#IfWinActive
+
 /*
 #IfWinActive  emacs
 AppsKey::Enter

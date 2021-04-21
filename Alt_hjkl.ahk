@@ -150,7 +150,7 @@ Loop {
 	c := RegExMatch(line,"SourceURL:(.*)$", url)
 	if (c = 1)
 	{
-	Clipboard= [[%url1%][主题：%Content%]]   ;注意url后面的数字1
+	Clipboard= [[%url1%][%Content%]]   ;注意url后面的数字1
 	ToolTip 剪贴板内容为：`n%Clipboard%
 	Sleep,3000
 	ToolTip
