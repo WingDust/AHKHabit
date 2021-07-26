@@ -23,6 +23,7 @@ GroupAdd,ApptoEnter , ahk_exe Listary.exe
 GroupAdd,ApptoEnter , ahk_exe AutoHotkey.exe
 GroupAdd,ApptoEnter , ahk_exe WindowsTerminal.exe
 GroupAdd,ApptoEnter , ahk_exe pwsh.exe
+GroupAdd,ApptoEnter , ahk_exe powershell.exe
 GroupAdd,ApptoEnter , ahk_exe SearchApp.exe
 
 
@@ -32,6 +33,7 @@ GroupAdd,Quit , ahk_exe  pwsh.exe
 GroupAdd,Quit , ahk_exe  WindowsTerminal.exe
 GroupAdd,Quit , ahk_exe  Arch.exe
 GroupAdd,Quit  , ahk_exe BaiduPCS-Go.exe
+GroupAdd,Quit  , ahk_exe powershell.exe
 
 GroupAdd, UpandDown, ahk_exe OpenWith.exe
 
@@ -61,11 +63,18 @@ AppsKey::Enter
 Return
 #IfWinActive
 
+/*
 #IfWinActive ahk_exe Code.exe
-^d::Send,{PgDn}
-^u::Send,{PgUp}
+^d::
+  Send,{PgDn}
+  Send,{^}
+
+^u::
+  Send,{PgUp}
+  Send,{^}
 Return
 #IfWinActive
+*/
 
 /*
 #IfWinActive  emacs
