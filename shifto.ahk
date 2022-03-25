@@ -302,6 +302,21 @@ Return
 
 
 
+$g::
+	KeyWait, g
+	If (A_TimeSinceThisHotkey > 300)
+		SetTimer, maing, -1
+	Else
+		;SendInput g
+		SendInput, % GetKeyState("CapsLock", "G") ? "G" : "g"
+Return
+
+maing:
+    ;Tooltip 输入T ,1920,1080
+    SendRaw G
+Return
+
+
 ;; $4::
 ;; SetTimer, mainc, 10       ;10毫秒执行一次
 ;; return

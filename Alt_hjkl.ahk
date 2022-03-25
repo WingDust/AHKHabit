@@ -102,40 +102,6 @@ else {                                                               ;|
 return                                                               ;|
 ;
 
-$4::
-SetTimer, mainc, 10       ;10毫秒执行一次
-return
-
-mainc:
-counts ++
-GetKeyState, tstt, 4, P      ;获取按键T的状态
-if ( tstt = "U" )   ;当松开按键的时候
-{
-	SetTimer, mainc, off   ;取消定时器
-	if (counts < 13)   ;如果counts在10以内，说明从按下到松开的时间为10*10=100毫秒，判断为短按。
-	{
-		GetKeyState, capstt, CapsLock, T       ;获取大小写锁定键状态
-		if ( capstt = "D" )   ;如果锁定
-		{
-			Send 4      ;发送T
-		}
-		else
-		{
-			Send 4      ;发送t
-		}
-	}
-	else            ;如果counts大于10，说明是长按，则执行下面的主程序
-	{
-        Send $
-		;sgBox, 即将戳开百度
-	;gosub, mainp    ;转到mainp
-	}
-	counts = 0        ;重置计数，清空变量，用于下次使用
-	tstt := 
-	capstt := 
-	return
-}
-return
 
 ;Quant整理
 ;2017年1月6日11:39:31
