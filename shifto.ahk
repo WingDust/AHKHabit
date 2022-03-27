@@ -12,7 +12,7 @@ $1::
 Return
 
 main1:
-    Tooltip 输入T ,1920,1080
+    ;Tooltip 输入T ,1920,1080
     SendRaw !
 Return
 
