@@ -356,8 +356,10 @@ Return
 
 
 ctrl & h::
+ KeyWait ctrl 
+ KeyWait h 
 	Send {BS}
-	Send ^
+	; Send ^
 Return
 ; ctrl & h::Send BackSpace
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
