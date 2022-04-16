@@ -355,6 +355,7 @@ Return
 
 
 
+
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
 ;; 将空格当成 shift 和 space 
 
@@ -367,7 +368,7 @@ space & 2:: Send @
 space & 3:: Send #
 space & 4:: Send $
 space & 5:: Send {`%}
-space & 6:: Send ^
+space & 6:: Send `^
 space & 7:: Send &
 space & 8:: Send *
 space & 9:: Send (
