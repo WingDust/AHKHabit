@@ -355,7 +355,7 @@ Return
 
 
 
-ctrl & h::BackSpace
+ctrl & h::Send BackSpace
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
 ;; 将空格当成 shift 和 space 
 
