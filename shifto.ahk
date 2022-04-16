@@ -355,12 +355,13 @@ Return
 
 
 
-ctrl & h::
+;； 改用 powertoys 实现
+; ctrl & h::
 ;  KeyWait ctrl 
 ;  KeyWait h 
-	Send {BS}
+	; Send {BS}
 	; Send ^
-Return
+; Return
 ; ctrl & h::Send BackSpace
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
 ;; 将空格当成 shift 和 space 
