@@ -356,7 +356,7 @@ Return
 
 
 ctrl & h::
- KeyWait ctrl 
+;  KeyWait ctrl 
 ;  KeyWait h 
 	Send {BS}
 	; Send ^
