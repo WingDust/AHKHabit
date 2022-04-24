@@ -417,3 +417,5 @@ space & .:: Send >
 space & /:: Send ?
 space & \:: Send |
 return
+
+^q::Send,!{f4}Return
