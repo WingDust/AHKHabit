@@ -418,4 +418,55 @@ space & /:: Send ?
 space & \:: Send |
 return
 
+;^ & space & 1:: Send {^+1}
+^ & {space} & 1:: Send 1
+return
+/*
+space & 2:: Send @
+space & 3:: Send #
+space & 4:: Send $
+space & 5:: Send {`%}
+space & 6:: Send `^
+space & 7:: Send &
+space & 8:: Send *
+space & 9:: Send (
+space & 0:: Send )
+space & -:: Send _
+space & =:: Send +
+space & q:: Send Q
+space & w:: Send W
+space & e:: Send E
+space & r:: Send R
+space & t:: Send T
+space & y:: Send Y
+space & u:: Send U
+space & i:: Send I
+space & o:: Send O
+space & p:: Send P
+space & [:: Send {`{}
+space & ]:: Send {`}}
+space & a:: Send A
+space & s:: Send S
+space & d:: Send D
+space & f:: Send F
+space & g:: Send G
+space & h:: Send H
+space & j:: Send J
+space & k:: Send K
+space & l:: Send L
+space & `;:: Send :
+space & ':: Send "
+space & z:: Send Z
+space & x:: Send X
+space & c:: Send C 
+space & v:: Send V
+space & b:: Send B
+space & n:: Send N
+space & m:: Send M 
+space & ,:: Send <
+space & .:: Send >
+space & /:: Send ?
+space & \:: Send |
+return
+*/
 ^q::Send,!{f4}Return
