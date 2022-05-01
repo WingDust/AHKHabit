@@ -18,11 +18,11 @@
 
 
 $2::
-	KeyWait, 2
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main2, -1
-	Else
-		SendInput 2 
+  KeyWait, 2
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main2, -1
+  Else
+    SendInput 2 
 Return
 
 main2:
@@ -33,11 +33,11 @@ Return
 
 
 $3::
-	KeyWait, 3
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main3, -1
-	Else
-		SendInput 3 
+  KeyWait, 3
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main3, -1
+  Else
+    SendInput 3 
 Return
 
 main3:
@@ -47,11 +47,11 @@ Return
 
 
 $4::
-	KeyWait, 4
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main4, -1
-	Else
-		SendInput 4 
+  KeyWait, 4
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main4, -1
+  Else
+    SendInput 4 
 Return
 
 main4:
@@ -62,11 +62,11 @@ Return
 
 
 $5::
-	KeyWait, 5
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main5, -1
-	Else
-		SendInput 5
+  KeyWait, 5
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main5, -1
+  Else
+    SendInput 5
 Return
 
 main5:
@@ -76,11 +76,11 @@ Return
 
 
 $6::
-	KeyWait, 6
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main6, -1
-	Else
-		SendInput 6 
+  KeyWait, 6
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main6, -1
+  Else
+    SendInput 6 
 Return
 
 main6:
@@ -91,11 +91,11 @@ Return
 
 
 $7::
-	KeyWait, 7
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main7, -1
-	Else
-		SendInput 7 
+  KeyWait, 7
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main7, -1
+  Else
+    SendInput 7 
 Return
 
 main7:
@@ -106,11 +106,11 @@ Return
 
 
 $8::
-	KeyWait, 8
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main8, -1
-	Else
-		SendInput 8 
+  KeyWait, 8
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main8, -1
+  Else
+    SendInput 8 
 Return
 
 main8:
@@ -119,11 +119,11 @@ main8:
 Return
 
 $9::
-	KeyWait, 9
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main9, -1
-	Else
-		SendInput 9 
+  KeyWait, 9
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main9, -1
+  Else
+    SendInput 9 
 Return
 
 main9:
@@ -133,11 +133,11 @@ Return
 
 
 $0::
-	KeyWait, 0
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main0, -1
-	Else
-		SendInput 0 
+  KeyWait, 0
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main0, -1
+  Else
+    SendInput 0 
 Return
 
 main0:
@@ -147,11 +147,11 @@ Return
 
 
 $-::
-	KeyWait, -
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main-, -1
-	Else
-		SendInput - 
+  KeyWait, -
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main-, -1
+  Else
+    SendInput - 
 Return
 
 main-:
@@ -162,11 +162,11 @@ Return
 
 
 $=::
-	KeyWait, `=
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, maineq, -1
-	Else
-		SendInput `= 
+  KeyWait, `=
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, maineq, -1
+  Else
+    SendInput `= 
 Return
 
 maineq:
@@ -176,11 +176,11 @@ Return
 
 
 $[::
-	KeyWait, [
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main[, -1
-	Else
-		SendInput [ 
+  KeyWait, [
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main[, -1
+  Else
+    SendInput [ 
 Return
 
 main[:
@@ -190,11 +190,11 @@ Return
 
 
 $]::
-	KeyWait, ]
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main], -1
-	Else
-		SendInput ] 
+  KeyWait, ]
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, main], -1
+  Else
+    SendInput ] 
 Return
 
 main]:
@@ -204,11 +204,11 @@ Return
 
 
 $;::
-	KeyWait, `;
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, mainsp, -1
-	Else
-		SendInput `; 
+  KeyWait, `;
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, mainsp, -1
+  Else
+    SendInput `; 
 Return
 
 mainsp:
@@ -218,11 +218,11 @@ Return
 
 
 $'::
-	KeyWait, '
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, mainqutoe, -1
-	Else
-		SendInput ' 
+  KeyWait, '
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, mainqutoe, -1
+  Else
+    SendInput ' 
 Return
 
 mainqutoe:
@@ -232,11 +232,11 @@ Return
 
 
 $\::
-	KeyWait, \
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, mainop, -1
-	Else
-		SendInput \
+  KeyWait, \
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, mainop, -1
+  Else
+    SendInput \
 Return
 
 mainop:
@@ -246,11 +246,11 @@ Return
 
 
 $,::
-	KeyWait, `,
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, maind, -1
-	Else
-		SendInput `, 
+  KeyWait, `,
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, maind, -1
+  Else
+    SendInput `, 
 Return
 
 maind:
@@ -260,11 +260,11 @@ Return
 
 
 $.::
-	KeyWait, .
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, maindian, -1
-	Else
-		SendInput . 
+  KeyWait, .
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, maindian, -1
+  Else
+    SendInput . 
 Return
 
 maindian:
@@ -274,11 +274,11 @@ Return
 
 
 $/::
-	KeyWait, /
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, mainposix, -1
-	Else
-		SendInput /
+  KeyWait, /
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, mainposix, -1
+  Else
+    SendInput /
 Return
 
 mainposix:
@@ -288,11 +288,11 @@ Return
 
 
 $`::
-	KeyWait, ``
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, maink, -1
-	Else
-		SendInput ``
+  KeyWait, ``
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, maink, -1
+  Else
+    SendInput ``
 Return
 
 maink:
@@ -303,12 +303,12 @@ Return
 
 
 $g::
-	KeyWait, g
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, maing, -1
-	Else
-		;SendInput g
-		SendInput, % GetKeyState("CapsLock", "G") ? "G" : "g"
+  KeyWait, g
+  If (A_TimeSinceThisHotkey > 300)
+    SetTimer, maing, -1
+  Else
+    ;SendInput g
+    SendInput, % GetKeyState("CapsLock", "G") ? "G" : "g"
 Return
 
 maing:
@@ -359,8 +359,8 @@ Return
 ; ctrl & h::
 ;  KeyWait ctrl 
 ;  KeyWait h 
-	; Send {BS}
-	; Send ^
+  ; Send {BS}
+  ; Send ^
 ; Return
 ; ctrl & h::Send BackSpace
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
@@ -408,47 +408,48 @@ return
 ; space & 0:: Send )
 ; space & -:: Send _
 ; space & =:: Send +
-; space & q:: Send Q
-; space & w:: Send W
-; space & e:: Send E
-; space & r:: Send R
-; space & t:: Send T
-; space & y:: Send Y
-; space & u:: Send U
-; space & i:: Send I
-; space & o:: Send O
-; space & p:: Send P
+space & q:: Send Q
+space & w:: Send W
+space & e:: Send E
+space & r:: Send R
+space & t:: Send T
+space & y:: Send Y
+space & u:: Send U
+space & i:: Send I
+space & o:: Send O
+space & p:: Send P
 ; space & [:: Send {`{}
 ; space & ]:: Send {`}}
-; space & a:: Send A
-; space & s:: Send S
-; space & d:: Send D
-; space & f:: Send F
-; space & g:: Send G
-; space & h:: Send H
-; space & j:: Send J
-; space & k:: Send K
-; space & l:: Send L
+space & a:: Send A
+space & s:: Send S
+space & d:: Send D
+space & f:: Send F
+space & g:: Send G
+space & h:: Send H
+space & j:: Send J
+space & k:: Send K
+space & l:: Send L
 ; space & `;:: Send :
 ; space & ':: Send "
-; space & z:: Send Z
-; space & x:: Send X
-; space & c:: Send C 
-; space & v:: Send V
-; space & b:: Send B
-; space & n:: Send N
-; space & m:: Send M 
+space & z:: Send Z
+space & x:: Send X
+space & c:: Send C 
+space & v:: Send V
+space & b:: Send B
+space & n:: Send N
+space & m:: Send M 
 ; space & ,:: Send <
 ; space & .:: Send >
 ; space & /:: Send ?
 ; space & \:: Send |
-; return
-
 return
+
 */
 ^q::Send,!{f4}Return
 
 
+;;  ctrl space 按住 
+;; 查看文档 高级绑定热键
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
 space & 1:: Send ^+1
@@ -461,37 +462,184 @@ return
 
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 3:: Send ^+2
+space & 3:: Send ^+3
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 4:: Send ^+2
+space & 4:: Send ^+4
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 5:: Send ^+2
+space & 5:: Send ^+5
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 6:: Send ^+2
+space & 6:: Send ^+6
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 7:: Send ^+2
+space & 7:: Send ^+7
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 8:: Send ^+2
+space & 8:: Send ^+8
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 9:: Send ^+2
+space & 9:: Send ^+9
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & 0:: Send ^+2
+space & 0:: Send ^+0
 return
 
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & q:: Send ^+q
+return
+
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & w:: Send ^+w
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & e:: Send ^+e
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & r:: Send ^+r
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & t:: Send ^+t
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & y:: Send ^+y
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & u:: Send ^+u
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & i:: Send ^+i
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & o:: Send ^+o
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & p:: Send ^+p
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & a:: Send ^+a
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & s:: Send ^+s
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & d:: Send ^+d
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & f:: Send ^+f
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & g:: Send ^+g
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & h:: Send ^+h
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & j:: Send ^+j
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & k:: Send ^+k
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & l:: Send ^+l
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & z:: Send ^+z
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & x:: Send ^+x
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & c:: Send ^+c
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & v:: Send ^+v
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & b:: Send ^+b
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & n:: Send ^+n
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & m:: Send ^+m
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & [:: Send ^+`[
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & ]:: Send ^+]
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & `;:: Send  ^+`;
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & ':: Send ^+'
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & \:: Send ^+\
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & ,:: Send ^+,
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & .:: Send ^+.
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & /:: Send ^+/
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & q:: Send ^+q
+return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space & ``:: Send ^+``
+return
+
+;; 单  space 被按住
 #if GetKeyState("Space","p")
 1:: Send {!}
 return
