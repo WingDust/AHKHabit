@@ -727,4 +727,5 @@ return
   Tooltip 输入 x 窗口最大化 ,960,540
   KeyWait,x,L
   WinGetActiveTitle, CurrentWinTitle
+  WinMaximize, CurrentWinTitle
 
