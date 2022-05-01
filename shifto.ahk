@@ -727,7 +727,7 @@ Alt & Space::
 ; ~LAlt & Space::
   ; Tooltip 输入T ,1920,1080
   Tooltip 输入 x 窗口最大化 ,960,540
-  KeyWait,x,L
+  KeyWait,x, ,t1
   WinGetActiveTitle, CurrentWinTitle
   WinMaximize, CurrentWinTitle
   Tooltip 窗口最大化 ,960,540
