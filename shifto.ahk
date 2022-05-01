@@ -722,13 +722,14 @@ return
 
 
 
+; [关于“keywait按键等待”的一点想法](https://www.autoahk.com/archives/1547)
 ; LAlt & Space::
-Alt & Space & x::
-; ~LAlt & Space::
-  ; Tooltip 输入T ,1920,1080
-  Tooltip 输入 x 窗口最大化 ,960,540
-  KeyWait,x, ,t1
-  WinGetActiveTitle, CurrentWinTitle
-  WinMaximize, CurrentWinTitle
-  Tooltip 窗口最大化 ,960,540
-return
+; Alt & Space & x::
+; ; ~LAlt & Space::
+;   ; Tooltip 输入T ,1920,1080
+;   Tooltip 输入 x 窗口最大化 ,960,540
+;   KeyWait,x, ,t1
+;   WinGetActiveTitle, CurrentWinTitle
+;   WinMaximize, CurrentWinTitle
+;   Tooltip 窗口最大化 ,960,540
+; return
