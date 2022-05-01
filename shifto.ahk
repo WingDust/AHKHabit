@@ -722,6 +722,7 @@ return
 
 
 
+;[AutoHotkey三击Alt和双击Alt设为不同快捷键](https://blog.csdn.net/liuyukuan/article/details/5955347) 
 ; [关于“keywait按键等待”的一点想法](https://www.autoahk.com/archives/1547)
 ; LAlt & Space::
 ; Alt & Space & x::
