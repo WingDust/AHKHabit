@@ -737,4 +737,4 @@ return
 
 Alt & Space::
   WinGetActiveTitle, CurrentWinTitle
-  WinSet,TransColor, On|Off|Toggle|Value(0-255) [, WinTitle, WinText, ExcludeTitle, ExcludeText]
+  WinSet,TransColor,ffffff, 200 , CurrentWinTitle
