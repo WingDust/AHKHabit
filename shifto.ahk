@@ -636,7 +636,7 @@ space & Escape:: Send ^+Escape
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & ``:: Send ^+``
+space &  `:: Send ^+`
 return
 
 ;; 单  space 被按住
