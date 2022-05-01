@@ -400,7 +400,7 @@ return
 space & 1::MsgBox hotkey s
 
 #if GetKeyState("Space","p")
-1:: Send !
+1:: Send {!}
 ; space & 1:: Send !
 space & 2:: Send @
 space & 3:: Send #
