@@ -721,4 +721,6 @@ return
 return
 
 
-KeyWait,LAlt,L
+
+~LAlt & Space::
+  KeyWait,LAlt,L
