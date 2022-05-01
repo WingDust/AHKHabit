@@ -719,3 +719,6 @@ return
 #if GetKeyState("Space","p")
 `:: Send {~}
 return
+
+
+KeyWait,LAlt
