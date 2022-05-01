@@ -446,6 +446,7 @@ return
 
 */
 
+;; 不能将 Return 与 Send 放到同一行
 ^q::Send,!{f4}
 Return
 ; ^q::MsgBox hotkey 
