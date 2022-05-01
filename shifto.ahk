@@ -501,6 +501,80 @@ return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
 space & 1:: Send ^+1
+return
 
 #if GetKeyState("Space","p")
 1:: Send {!}
+return
+
+#if GetKeyState("Space","p")
+2:: Send {@}
+return
+
+#if GetKeyState("Space","p")
+3:: Send {#}
+return
+
+#if GetKeyState("Space","p")
+4:: Send {$}
+return
+
+#if GetKeyState("Space","p")
+5:: Send {`%}
+return
+
+#if GetKeyState("Space","p")
+6:: Send {^}
+return
+
+#if GetKeyState("Space","p")
+7:: Send {&}
+return
+
+#if GetKeyState("Space","p")
+8:: Send {*}
+return
+
+#if GetKeyState("Space","p")
+9:: Send {(}
+return
+
+#if GetKeyState("Space","p")
+0:: Send {)}
+return
+
+
+
+#if GetKeyState("Space","p")
+-:: Send {_}
+return
+#if GetKeyState("Space","p")
+=:: Send {+}
+return
+#if GetKeyState("Space","p")
+[:: Send {`{}
+return
+#if GetKeyState("Space","p")
+]:: Send {`}}
+return
+#if GetKeyState("Space","p")
+`;:: Send {:}
+return
+#if GetKeyState("Space","p")
+':: Send `"
+return
+#if GetKeyState("Space","p")
+\:: Send {|}
+return
+#if GetKeyState("Space","p")
+,:: Send {<}
+return
+#if GetKeyState("Space","p")
+.:: Send {>}
+return
+#if GetKeyState("Space","p")
+/:: Send {?}
+return
+#if GetKeyState("Space","p")
+`:: Send {~}
+return
