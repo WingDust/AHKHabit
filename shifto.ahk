@@ -730,4 +730,5 @@ Alt & Space::
   KeyWait,x,L
   WinGetActiveTitle, CurrentWinTitle
   WinMaximize, CurrentWinTitle
+  Tooltip 窗口最大化 ,960,540
 return
