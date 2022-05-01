@@ -723,4 +723,6 @@ return
 
 
 ~LAlt & Space::
-  KeyWait,LAlt,L
+  ; Tooltip 输入T ,1920,1080
+  Tooltip 输入 x 窗口最大化 ,960,540
+  KeyWait,x,L
