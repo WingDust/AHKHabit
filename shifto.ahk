@@ -453,7 +453,7 @@ Return
 
 
 ;;  ctrl space 按住 
-;; 查看文档 高级绑定热键
+;; 查看文档 高级热键功能
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
 space & 1:: Send ^+1
