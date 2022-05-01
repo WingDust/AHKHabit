@@ -445,7 +445,10 @@ space & m:: Send M
 return
 
 */
-^q::Send,!{f4}Return
+
+^q::Send,!{f4}
+Return
+; ^q::MsgBox hotkey 
 
 
 ;;  ctrl space 按住 
