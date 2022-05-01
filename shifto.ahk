@@ -2,19 +2,19 @@
 ;; 
 
 
-$1::
-	KeyWait, 1
-	If (A_TimeSinceThisHotkey > 300)
-		SetTimer, main1, -1
-	Else
-		;SendInput, % GetKeyState("CapsLock", "T") ? "T" : "t"
-		SendInput 1 
-Return
+; $1::
+; 	KeyWait, 1
+; 	If (A_TimeSinceThisHotkey > 300)
+; 		SetTimer, main1, -1
+; 	Else
+; 		;SendInput, % GetKeyState("CapsLock", "T") ? "T" : "t"
+; 		SendInput 1 
+; Return
 
-main1:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw !
-Return
+; main1:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw !
+; Return
 
 
 $2::
@@ -396,7 +396,6 @@ return
 ;        } 
 ;    } 
 ;    Return 
-@
 #if GetKeyState("Ctrl","p")
 space & 1::MsgBox hotkey s
 
