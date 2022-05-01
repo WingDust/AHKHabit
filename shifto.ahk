@@ -721,4 +721,4 @@ return
 return
 
 
-KeyWait,LAlt
+KeyWait,LAlt,L
