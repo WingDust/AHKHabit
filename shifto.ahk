@@ -398,9 +398,9 @@ return
 ;    Return 
 
 #if GetKeyState("Ctrl","p")
-space::MsgBox hotkey s
+space & 1::MsgBox hotkey s
 
-space & 1:: Send !
+; space & 1:: Send !
 space & 2:: Send @
 space & 3:: Send #
 space & 4:: Send $
