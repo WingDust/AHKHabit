@@ -6,3 +6,4 @@ Alt & Space::
   Tooltip  "%CurrentWinTitle%" ,960,540
   ; WinSet,TransColor,FFFFFF, 100 , CurrentWinTitle
   WinSet,TransColor,White, 100 , CurrentWinTitle
+  WinSet,Transparent,200, CurrentWinTitle
