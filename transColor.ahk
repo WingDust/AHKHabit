@@ -1,4 +1,5 @@
 
 Alt & Space::
   WinGetActiveTitle, CurrentWinTitle
-  WinSet,TransColor,ffffff, 200 , CurrentWinTitle
+  Tooltip 窗口化 ,960,540
+  WinSet,TransColor,FFFFFF, 100 , CurrentWinTitle
