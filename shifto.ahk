@@ -632,7 +632,7 @@ space & /:: Send ^+/
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
-space & q:: Send ^+q
+space & Escape:: Send ^+Escape
 return
 #if GetKeyState("Ctrl","p")
 ; space & 1::MsgBox hotkey s
