@@ -734,3 +734,7 @@ return
 ;   WinMaximize, CurrentWinTitle
 ;   Tooltip 窗口最大化 ,960,540
 ; return
+
+Alt & Space::
+  WinGetActiveTitle, CurrentWinTitle
+  WinSet,TransColor, On|Off|Toggle|Value(0-255) [, WinTitle, WinText, ExcludeTitle, ExcludeText]
