@@ -366,9 +366,39 @@ Return
 ;; [Spacebar as Space and as Shift](https://www.autohotkey.com/board/topic/57344-spacebar-as-space-and-as-shift/)
 ;; 将空格当成 shift 和 space 
 
+
+;~space::
+;KeyWait, space, U T1 ; Wait for the space button to be released.
+;if  (ErrorLevel = 0) {  ; space was not held too long. A long press indicates an aborted shift, not a space, so ignore.
+;   Send {space}
+;}
+;return 
+
 space::
 Send {space}
 return
+
+
+;  [[AutoHotkey] 怎样让空格键做修饰键时是 shift，单独按时仍然是空格？](https://www.v2ex.com/t/390318)
+;Space Up:: 
+;    SendInput {Shift Up} 
+;    if ( A_PriorKey = "Space"  and GetKeyState("Ctrl") = 0 ) 
+;    ;if (GetKeyState("Ctrl") = 0 and GetKeyState("Shift") = 0 and GetKeyState("Alt") = 0) 
+;    { 
+;      Tooltip 输入T ,1920,1080
+;        if (sLButtonClicked = 1) 
+;        { 
+;            sLButtonClicked = 0 
+;        } 
+;        else 
+;        { 
+;            SendInput {Shift}{Space} 
+;        } 
+;    } 
+;    Return 
+
+#if GetKeyState("Ctrl","p")
+space::MsgBox hotkey s
 
 space & 1:: Send !
 space & 2:: Send @
@@ -419,7 +449,7 @@ space & \:: Send |
 return
 
 ;^ & space & 1:: Send {^+1}
-^ & {space} & 1:: Send 1
+;^ & {space} & 1:: Send 1
 return
 /*
 space & 2:: Send @
