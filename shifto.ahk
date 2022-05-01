@@ -723,7 +723,7 @@ return
 
 
 ; LAlt & Space::
-Alt & Space::
+Alt & Space & x::
 ; ~LAlt & Space::
   ; Tooltip 输入T ,1920,1080
   Tooltip 输入 x 窗口最大化 ,960,540
