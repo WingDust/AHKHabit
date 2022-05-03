@@ -16,9 +16,9 @@ return
 Send {Right}
 return
 
-CapsLock & -::SendInput,{Volume_Down}                                                       
-CapsLock & =::SendInput,{Volume_Up}                                                       
-CapsLock & 0::SendInput,{Volume_Mute}                                                       
+~CapsLock & -::SendInput,{Volume_Down}                                                       
+~CapsLock & =::SendInput,{Volume_Up}                                                       
+~CapsLock & 0::SendInput,{Volume_Mute}                                                       
 
 ;CapsLock::Send, {ESC} 
 ;CapsLock::Esc
