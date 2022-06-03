@@ -642,6 +642,10 @@ return
 ; space & 1::MsgBox hotkey s
 space &  `:: Send ^+`
 return
+#if GetKeyState("Ctrl","p")
+; space & 1::MsgBox hotkey s
+space &  Tab:: Send ^+{Tab}
+return
 
 ;; 单  space 被按住
 #if GetKeyState("Space","p")
