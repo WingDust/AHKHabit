@@ -1,4 +1,5 @@
-﻿# Start-Process -WindowStyle Hidden emacs
+﻿# [强制PowerShell脚本以管理员权限运行](https://www.pstips.net/force-script-run-as-admin.html)
+# Start-Process -WindowStyle Hidden emacs
 # param( $a, $b )
 #region 关键代码：强迫以管理员权限运行
 $currentWi = [Security.Principal.WindowsIdentity]::GetCurrent()
