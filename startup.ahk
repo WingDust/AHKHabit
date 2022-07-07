@@ -2,7 +2,7 @@
 Sleep, 1000
 
 Run ,emacs,,Hide
-Run ,Taskmgr,,Max
+;;Run ,Taskmgr,,Max
 
 ; Sleep, 100000000
 ; 由于 Window 10 不支持直接在开启运行 powershell ,所以使用 ahk 来启动
@@ -91,7 +91,7 @@ Return
 Max:
 IfWinActive, ahk_group WinMaximize
 {
-  ToolTip, ssss
+;; ToolTip, ssss
 	WinGet, MinMax, MinMax
 	If !MinMax
 		WinMaximize
@@ -102,7 +102,7 @@ Return
 RunAs,  Administrator
 IfWinActive, ahk_group WinMaximize
 {
-  ToolTip, ssss
+;;  ToolTip, ssss
 	WinGet, MinMax, MinMax
 	If !MinMax
 		WinMaximize

@@ -643,8 +643,7 @@ return
 space &  `:: Send ^+`
 return
 #if GetKeyState("Ctrl","p")
-; space & 1::MsgBox hotkey s
-space &  Tab:: Send ^+{Tab}
+space & Tab:: Send ^+{Tab}
 return
 
 ;; 单  space 被按住
@@ -738,3 +737,5 @@ return
 ;   WinMaximize, CurrentWinTitle
 ;   Tooltip 窗口最大化 ,960,540
 ; return
+
+
