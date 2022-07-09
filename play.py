@@ -30,12 +30,13 @@ IS_WIN32 = 'win32' in str(sys.platform).lower()
 # m.wait()
 # subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 
+def p():
+    subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 
 if __name__ == '__main__':
-    keyboard.add_hotkey('a', lambda:subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"'),timeout=0
-                      )
-    # keyboard.hook_key('a', lambda:subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
-    #                   )
+    # keyboard.add_hotkey('a', lambda:subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"'),timeout=0
+                    #   )
+    keyboard.hook_key('a', p)
     keyboard.wait()
     pass
     # app = QtWidgets.QApplication(sys.argv)
