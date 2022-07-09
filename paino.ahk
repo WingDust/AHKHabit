@@ -77,7 +77,7 @@ $q::
 ; Run "mpv.exe" %p%%level%%ogg%  ,,Hide
 ; k := %p%%level%%ogg%
 ; MsgBox % p . level*5 . ogg
-Run % "mpv.exe "  p . level*4+1 . ogg,,
+Run  % "mpv.exe "  p . level*4+1 . ogg,,
 ; MsgBox,p . level . ogg
 ; Run "mpv.exe" p . level . ogg  ,,
 SendRaw q
