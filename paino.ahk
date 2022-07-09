@@ -72,6 +72,8 @@ b :="B"
 | a   | q   | s   | w   | d   | f   | e   | z   | r   | x   | t   | c   |
 
 
+    0  1   2   3 4   5   6   7   8   9   10  11  
+
 $q:: 
 ; level *
 ; Run "mpv.exe" %p%%level%%ogg%  ,,Hide
@@ -124,12 +126,12 @@ Run % "mpv.exe "  p . level*4+4 . ogg,,
 SendRaw d
 return
 $f:: 
-Run % "mpv.exe "  p . level*4+2 . ogg,,
+Run % "mpv.exe "  p . level*4+5 . ogg,,
 SendRaw f
-;Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
 $z:: 
-Send z
+Run % "mpv.exe "  p . level*4+7 . ogg,,
+SendRaw z
  
 return
 $x:: 
