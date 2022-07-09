@@ -117,17 +117,15 @@ return
 $s:: 
 
 Run % "mpv.exe "  p . level*4+2 . ogg,,
-Send s
-;Run "mpv.exe"  p startNum*level+6 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
+SendRaw s
 return
 $d:: 
-Send d
-;Run "mpv.exe"  p startNum*level+7 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
+Run % "mpv.exe "  p . level*4+2 . ogg,,
+SendRaw d
 return
 $f:: 
-Send f
+Run % "mpv.exe "  p . level*4+2 . ogg,,
+SendRaw f
 ;Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
 $z:: 
