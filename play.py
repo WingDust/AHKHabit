@@ -30,7 +30,7 @@ IS_WIN32 = 'win32' in str(sys.platform).lower()
 # m.wait()
 # subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 
-def p():
+def p(kb_event):
     subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 
 if __name__ == '__main__':
