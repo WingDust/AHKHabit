@@ -120,7 +120,7 @@ Run % "mpv.exe "  p . level*4+2 . ogg,,
 SendRaw s
 return
 $d:: 
-Run % "mpv.exe "  p . level*4+2 . ogg,,
+Run % "mpv.exe "  p . level*4+4 . ogg,,
 SendRaw d
 return
 $f:: 
