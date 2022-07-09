@@ -6,20 +6,14 @@ import os
 import sys
 # import pyautogui
 # import ahk
-from PyQt5 import QtGui,QtWidgets,QtSvg
-from PyQt5.QtWidgets import QApplication,QWidget,QLabel,QGridLayout,QPushButton,QSizePolicy
+from PyQt5 import QtGui, QtWidgets, QtSvg
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QGridLayout, QPushButton, QSizePolicy
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtCore import QObject,QUrl,QRect
-
-
-
-
-
-
+from PyQt5.QtCore import QObject, QUrl, QRect
 
 
 def subprocess_call(*args, **kwargs):
-    #also works for Popen. It creates a new *hidden* window, so it will work in frozen apps (.exe).
+    # also works for Popen. It creates a new *hidden* window, so it will work in frozen apps (.exe).
     if IS_WIN32:
         startupinfo = subprocess.STARTUPINFO()
         startupinfo.dwFlags = subprocess.CREATE_NEW_CONSOLE | subprocess.STARTF_USESHOWWINDOW
@@ -34,14 +28,12 @@ IS_WIN32 = 'win32' in str(sys.platform).lower()
 # os.system(r"mpv 'H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg'")
 # m =subprocess.Popen('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 # m.wait()
-subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
+# subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 
 
-
-
-if __name__=='__main__':
-    keyboard.hook_key('a',lambda ,subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
-)
+if __name__ == '__main__':
+    keyboard.hook_key('a', lambda, subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
+                      )
     pass
     # app = QtWidgets.QApplication(sys.argv)
     # viewer = QtSvg.QSvgWidget()
