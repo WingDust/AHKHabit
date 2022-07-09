@@ -20,7 +20,7 @@ cmdr(command){
 }
 
 
-global level := 5
+global level := 1
 
 global p:="H:/ElectronProject/piano/src/assets/audio3/"
 global  ogg := ".ogg"
@@ -30,7 +30,23 @@ startNum := 24
 ;不用 g 与 v 24
 1::
 level := 1
-Send {1}
+SendRaw, 1
+return 
+2::
+level := 2
+Send {2}
+return
+3::
+level := 3
+Send {3}
+return 
+4::
+level := 5
+Send {5}
+return 
+5::
+level := 5
+Send {5}
 return 
 
 s:="/"
@@ -42,95 +58,132 @@ g :="G"
 a :="A"
 b :="B"
 
+; q-t 为黑键
+; a-f 为白键
+| C   | C#  | D   | D#  | E   | F   | F#  | G   | G#  | A   | A#  | B   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
+| 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  |
+| 28  | 29  | 30  | 31  | 32  | 33  | 34  | 35  | 36  | 37  | 38  | 39  |
+| 40  | 41  | 42  | 43  | 44  | 45  | 46  | 47  | 48  | 49  | 50  | 51  |
+| 52  | 53  | 54  | 55  | 56  | 57  | 58  | 59  | 60  | 61  | 62  | 63  |
+| 64  | 65  | 66  | 67  | 68  | 69  | 70  | 71  | 72  | 73  | 74  | 75  |
+| 76  | 77  | 78  | 79  | 80  | 81  | 82  | 83  | 84  | 85  | 86  | 87  |
+
 
 $q:: 
 ; level *
 ; Run "mpv.exe" %p%%level%%ogg%  ,,Hide
 ; k := %p%%level%%ogg%
-; MsgBox %p%%level%%ogg%
-Run "mpv.exe" %p%%level%%ogg% ,,
+; MsgBox % p . level*5 . ogg
+Run % "mpv.exe "  p . level*4+1 . ogg,,
+; Run "mpv.exe" %p%%level*5%%ogg% ,,
 ; MsgBox,p . level . ogg
 ; Run "mpv.exe" p . level . ogg  ,,
 Send {q}
 ;Run  ,,Hide
 ;MsgBox pn%cn%
 return
-/*
-w:: Send w
+;/*
+$w:: 
+
+Run % "mpv.exe "  p . level*4+1 . ogg,,
+SendRaw w
 
 ;Run "mpv.exe"  p startNum*level+1 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-e:: Send e
+$e:: 
+Send e
 ;Run "mpv.exe"  p startNum*level+2 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-r:: Send r
+$r:: 
+Send r
 ;Run "mpv.exe"  p startNum*level+3 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-t:: Send t
+$t:: 
+SendRaw t
 ;Run "mpv.exe"  p startNum*level+4 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-a:: Send a
-;Run "mpv.exe"  p startNum*level+5 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
+$a:: 
+
+Run % "mpv.exe "  p . level*4 . ogg,,
+SendRaw a
 return
-s:: Send s
+$s:: 
+
+Run % "mpv.exe "  p . level*4+2 . ogg,,
+Send s
 ;Run "mpv.exe"  p startNum*level+6 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-d:: Send d
+$d:: 
+Send d
 ;Run "mpv.exe"  p startNum*level+7 " 083.ogg" ,,Hide
 ; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-f:: Send f
+$f:: 
+Send f
 ;Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
-z:: Send z
+$z:: 
+Send z
  
 return
-x:: Send x
+$x:: 
+Send x
  
 return
-c:: Send c
+$c:: 
+Send c
  
 return
-y:: Send y
+$y:: 
+Send y
 return
-u:: Send u
+$u:: 
+Send u
  
 return
-i:: Send i
+$i:: 
+Send i
  
 return
-o:: Send o
+$o:: 
+Send o
  
 return
-p:: Send p
+$p:: 
+Send p
 
  
 return
-h:: Send h
+$h:: 
+Send h
  
 return
-j:: Send j
+$j:: 
+Send j
  
 return
-k:: Send k
+$k:: 
+Send k
  
 return
-l:: Send l
+$l:: 
+Send l
  
 return
-n:: Send n
+$n:: 
+Send n
  
 return
-m:: Send m
+$m:: 
+Send m
  
-return
-; ,:: Send ,
  
 ; return
 
