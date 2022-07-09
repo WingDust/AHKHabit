@@ -39,11 +39,12 @@ subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D
 
 
 if __name__=='__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    viewer = QtSvg.QSvgWidget()
+    pass
+    # app = QtWidgets.QApplication(sys.argv)
+    # viewer = QtSvg.QSvgWidget()
 
-    # viewer.load(sys.argv[1])
-    viewer.load("H:/ElectronProject/Autohotkey/AHKHabit/ae.svg")
-    viewer.show()
+    # # viewer.load(sys.argv[1])
+    # viewer.load("H:/ElectronProject/Autohotkey/AHKHabit/ae.svg")
+    # viewer.show()
 
-    app.exec()
+    # app.exec()
