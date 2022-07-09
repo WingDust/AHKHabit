@@ -40,8 +40,7 @@ subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D
 
 
 if __name__=='__main__':
-    keyboard.hook_key('a',lambda subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
-
+    keyboard.hook_key('a',lambda ,subprocess_call('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 )
     pass
     # app = QtWidgets.QApplication(sys.argv)
