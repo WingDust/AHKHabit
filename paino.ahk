@@ -70,9 +70,7 @@ b :="B"
 | 64  | 65  | 66  | 67  | 68  | 69  | 70  | 71  | 72  | 73  | 74  | 75  |
 | 76  | 77  | 78  | 79  | 80  | 81  | 82  | 83  | 84  | 85  | 86  | 87  |
 | a   | q   | s   | w   | d   | f   | e   | z   | r   | x   | t   | c   |
-
-
-    0  1   2   3 4   5   6   7   8   9   10  11  
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  |
 
 $q:: 
 ; level *
@@ -80,39 +78,28 @@ $q::
 ; k := %p%%level%%ogg%
 ; MsgBox % p . level*5 . ogg
 Run % "mpv.exe "  p . level*4+1 . ogg,,
-; Run "mpv.exe" %p%%level*5%%ogg% ,,
 ; MsgBox,p . level . ogg
 ; Run "mpv.exe" p . level . ogg  ,,
-Send {q}
-;Run  ,,Hide
-;MsgBox pn%cn%
+SendRaw q
 return
 ;/*
 $w:: 
-
-Run % "mpv.exe "  p . level*4+1 . ogg,,
+Run % "mpv.exe "  p . level*4+3 . ogg,,
 SendRaw w
-
-;Run "mpv.exe"  p startNum*level+1 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
 $e:: 
-Send e
-;Run "mpv.exe"  p startNum*level+2 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
+Run % "mpv.exe "  p . level*6 . ogg,,
+SendRaw e
 return
 $r:: 
-Send r
-;Run "mpv.exe"  p startNum*level+3 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
+Run % "mpv.exe "  p . level*8 . ogg,,
+SendRaw r
 return
 $t:: 
+Run % "mpv.exe "  p . level*10 . ogg,,
 SendRaw t
-;Run "mpv.exe"  p startNum*level+4 " 083.ogg" ,,Hide
-; Run "mpv.exe"  "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg" ,,Hide
 return
 $a:: 
-
 Run % "mpv.exe "  p . level*4 . ogg,,
 SendRaw a
 return
@@ -135,11 +122,13 @@ SendRaw z
  
 return
 $x:: 
-Send x
+Run % "mpv.exe "  p . level*4+9 . ogg,,
+SendRaw x
  
 return
 $c:: 
-Send c
+Run % "mpv.exe "  p . level*4+11 . ogg,,
+SendRaw c
  
 return
 $y:: 
