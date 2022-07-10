@@ -25,10 +25,6 @@ $2::
     SendInput 2 
 Return
 
-main2:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw @
-Return
 
 
 

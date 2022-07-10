@@ -28,23 +28,23 @@ startNum := 24
 ;ToolTip level * startNum
 
 ;不用 g 与 v 24
-1::
+$1::
 level := 1
 SendRaw, 1
 return 
-2::
+$2::
 level := 2
 SendRaw 2
 return
-3::
+$3::
 level := 3
 SendRaw 3
 return 
-4::
+$4::
 level := 4
 SendRaw 4
 return 
-5::
+$5::
 level := 5
 SendRaw 5
 return 
