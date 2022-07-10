@@ -52,12 +52,12 @@ return
 
 
 $9::
-highlevel := 6
+highlevel := 5
 SendRaw 9
 return 
 
 $0::
-highlevel := 7
+highlevel := 6
 SendRaw 0
 return 
 
