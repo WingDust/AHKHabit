@@ -148,49 +148,51 @@ SendRaw c
  
 return
 $y:: 
-Send y
+
+Run % "mpv.exe "  p . hightlevel*4+ . ogg,,Hide
+SendRaw y
 return
 $u:: 
-Send u
+SendRaw u
  
 return
 $i:: 
-Send i
+SendRaw i
  
 return
 $o:: 
-Send o
+SendRaw o
  
 return
 $p:: 
-Send p
+SendRaw p
 
  
 return
 $h:: 
-Send h
+SendRaw h
  
 return
 $j:: 
-Send j
+SendRaw j
  
 return
 $k:: 
-Send k
+SendRaw k
  
 return
 $l:: 
-Send l
+SendRaw l
  
 return
 $n:: 
-Send n
+SendRaw n
  
 return
 $m:: 
-Send m
+SendRaw m
  
  
-; return
+return
 
 */
