@@ -51,7 +51,7 @@
 | 10  | 88  |     |     |     |     |     |     |     |     |     |     |     | 音    |
 | 10  | a   | q   | s   | w   | d   | f   | e   | z   | r   | x   | t   | c   | //// |
 | 11  | h   | y   | j   | u   | k   | l   | i   | b   | o   | n   | p   | m   | //// |
-| 12  | j   | y   | k   | u   | l   | `;  | i   | n   | o   | m   | p   | ,   | //// |
+| 12  | j   | y   | k   | u   | l   | ;   | i   | n   | o   | m   | p   | ,   | //// |
 | 13  | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | //// |
 
 - line 9 is standard rule design (temp can't input Chinese)
