@@ -21,7 +21,7 @@ cmdr(command){
 
 
 global level := 0
-global highlevel := 6
+global highlevel := 5
 
 global p:="H:/ElectronProject/piano/src/assets/audio3/"
 global  ogg := ".ogg"
@@ -93,26 +93,26 @@ $q::
 ; Run "mpv.exe" %p%%level%%ogg%  ,,Hide
 ; k := %p%%level%%ogg%
 ; MsgBox % p . level*5 . ogg
-Run  % "mpv.exe "  p . level*12+1 . ogg,,Hide
+Run  % "mpv.exe "  p . level*12+5 . ogg,,Hide
 ; MsgBox,p . level . ogg
 ; Run "mpv.exe" p . level . ogg  ,,
 SendRaw q
 return
 ;/*
 $w:: 
-Run % "mpv.exe "  p . level*12+3 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+7 . ogg,,Hide
 SendRaw w
 return
 $e:: 
-Run % "mpv.exe "  p . level*12+6 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+10 . ogg,,Hide
 SendRaw e
 return
 $r:: 
-Run % "mpv.exe "  p . level*12+8 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+12 . ogg,,Hide
 SendRaw r
 return
 $t:: 
-Run % "mpv.exe "  p . level*12+10 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+14 . ogg,,Hide
 SendRaw t
 return
 $a:: 
