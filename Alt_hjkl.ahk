@@ -105,6 +105,7 @@ return                                                               ;|
 ;
 
 
+; ctrl f2
 ;Quant整理
 ;2017年1月6日11:39:31
 ^f2::
@@ -151,11 +152,8 @@ Loop {
 FileDelete, temp.clip
 return
 
+
+;; win
 RWin::AppsKey
 return
 
-;;Ctrl & Shift::Ctrl
-
-mainp:
-Run, http://www.baidu.com
-return
