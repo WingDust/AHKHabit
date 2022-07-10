@@ -149,7 +149,7 @@ SendRaw c
 return
 $y:: 
 
-Run % "mpv.exe "  p . hightlevel*4+ . ogg,,Hide
+Run % "mpv.exe "  p . hightlevel*4 . ogg,,Hide
 SendRaw y
 return
 $u:: 
