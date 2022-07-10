@@ -93,14 +93,14 @@ $q::
 ; Run "mpv.exe" %p%%level%%ogg%  ,,Hide
 ; k := %p%%level%%ogg%
 ; MsgBox % p . level*5 . ogg
-Run  % "mpv.exe "  p . level*4+1 . ogg,,Hide
+Run  % "mpv.exe "  p . level*12+1 . ogg,,Hide
 ; MsgBox,p . level . ogg
 ; Run "mpv.exe" p . level . ogg  ,,
 SendRaw q
 return
 ;/*
 $w:: 
-Run % "mpv.exe "  p . level*4+3 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+3 . ogg,,Hide
 SendRaw w
 return
 $e:: 
@@ -116,34 +116,34 @@ Run % "mpv.exe "  p . level*10 . ogg,,Hide
 SendRaw t
 return
 $a:: 
-Run % "mpv.exe "  p . level*4 . ogg,,Hide
+Run % "mpv.exe "  p . level*12 . ogg,,Hide
 SendRaw a
 return
 $s:: 
 
-Run % "mpv.exe "  p . level*4+2 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+2 . ogg,,Hide
 SendRaw s
 return
 $d:: 
-Run % "mpv.exe "  p . level*4+4 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+4 . ogg,,Hide
 SendRaw d
 return
 $f:: 
-Run % "mpv.exe "  p . level*4+5 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+5 . ogg,,Hide
 SendRaw f
 return
 $z:: 
-Run % "mpv.exe "  p . level*4+7 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+7 . ogg,,Hide
 SendRaw z
  
 return
 $x:: 
-Run % "mpv.exe "  p . level*4+9 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+9 . ogg,,Hide
 SendRaw x
  
 return
 $c:: 
-Run % "mpv.exe "  p . level*4+11 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+11 . ogg,,Hide
 SendRaw c
  
 return
