@@ -121,55 +121,55 @@ SendRaw a
 return
 $s:: 
 
-Run % "mpv.exe "  p . level*12+2 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+6 . ogg,,Hide
 SendRaw s
 return
 $d:: 
-Run % "mpv.exe "  p . level*12+4 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+8 . ogg,,Hide
 SendRaw d
 return
 $f:: 
-Run % "mpv.exe "  p . level*12+5 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+9 . ogg,,Hide
 SendRaw f
 return
 $z:: 
-Run % "mpv.exe "  p . level*12+7 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+11 . ogg,,Hide
 SendRaw z
  
 return
 $x:: 
-Run % "mpv.exe "  p . level*12+9 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+13 . ogg,,Hide
 SendRaw x
  
 return
 $c:: 
-Run % "mpv.exe "  p . level*12+11 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+15 . ogg,,Hide
 SendRaw c
  
 return
 $y:: 
 
-Run % "mpv.exe "  p . highlevel*12+1 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+5 . ogg,,Hide
 SendRaw y
 return
 $u:: 
-Run % "mpv.exe "  p . highlevel*12+3 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+7 . ogg,,Hide
 SendRaw u
  
 return
 $i:: 
-Run % "mpv.exe "  p . highlevel*12+6 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+10 . ogg,,Hide
 SendRaw i
  
 return
 $o:: 
 
-Run % "mpv.exe "  p . highlevel*12+8 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+12 . ogg,,Hide
 SendRaw o
  
 return
 $p:: 
-Run % "mpv.exe "  p . highlevel*12+10 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+14 . ogg,,Hide
 SendRaw p
 return
 
@@ -177,38 +177,38 @@ return
 $j:: 
 
 ; MsgBox % p . highlevel*12 . ogg,
-Run % "mpv.exe "  p . highlevel*12 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+4 . ogg,,Hide
 
 SendRaw j
  
 return
 $k:: 
-Run % "mpv.exe "  p . highlevel*12+2 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+6 . ogg,,Hide
 SendRaw k
  
 return
 $l:: 
-Run % "mpv.exe "  p . highlevel*12+4 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+8 . ogg,,Hide
 SendRaw l
  
 return
 
 $;:: 
-Run % "mpv.exe "  p . highlevel*12+5 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+9 . ogg,,Hide
 SendRaw `;
 return
 $n:: 
-Run % "mpv.exe "  p . highlevel*12+7 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+11 . ogg,,Hide
 SendRaw n
  
 return
 $m:: 
-Run % "mpv.exe "  p . highlevel*12+9 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+13 . ogg,,Hide
 SendRaw m
 return
 
 $,:: 
-Run % "mpv.exe "  p . highlevel*12+11 . ogg,,Hide
+Run % "mpv.exe "  p . highlevel*12+15 . ogg,,Hide
 SendRaw `,
 return
 
