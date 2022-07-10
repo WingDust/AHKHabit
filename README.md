@@ -52,4 +52,5 @@
 | 10  | j   | y   | k   | u   | l   | ;   | i   | n   | o   | m   | p   | ,   | //// |
 | 11  | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | //// |
 
-- 9 
+- line 9 is standard rule design
+- line 10 is for my design
