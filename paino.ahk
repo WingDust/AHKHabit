@@ -175,6 +175,8 @@ return
 
  
 $j:: 
+
+MsgBox % p . hightlevel*12 . ogg,
 Run % "mpv.exe "  p . hightlevel*12 . ogg,,Hide
 
 SendRaw j
