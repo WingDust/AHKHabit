@@ -34,19 +34,19 @@ SendRaw, 1
 return 
 2::
 level := 2
-Send {2}
+SendRaw 2
 return
 3::
 level := 3
-Send {3}
+SendRaw 3
 return 
 4::
-level := 5
-Send {5}
+level := 4
+SendRaw 4
 return 
 5::
 level := 5
-Send {5}
+SendRaw 5
 return 
 
 s:="/"
