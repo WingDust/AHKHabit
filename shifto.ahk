@@ -374,9 +374,9 @@
 ;}
 ;return 
 
-; space::
-; Send {space}
-; return
+space::
+Send {space}
+return
 
 
 ;  [[AutoHotkey] 怎样让空格键做修饰键时是 shift，单独按时仍然是空格？](https://www.v2ex.com/t/390318)
