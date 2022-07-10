@@ -26,6 +26,12 @@ def subprocess_call(*args, **kwargs):
 
 IS_WIN32 = 'win32' in str(sys.platform).lower()
 
+class A:
+    def __init__():
+        pass
+class B(A):
+    def __init__():
+        pass
 # os.system(r"mpv 'H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg'")
 # m =subprocess.Popen('mpv "H:/ElectronProject/piano/src/assets/audio/German Concert D 021 083.ogg"')
 # m.wait()
