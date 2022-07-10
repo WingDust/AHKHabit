@@ -17,6 +17,7 @@ return
 Send {Right}
 return
 
+;; CapsLock 键
 ~CapsLock & -::SendInput,{Volume_Down}                                                       
 ~CapsLock & =::SendInput,{Volume_Up}                                                       
 ~CapsLock & 0::SendInput,{Volume_Mute}                                                       
