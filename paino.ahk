@@ -20,7 +20,7 @@ cmdr(command){
 }
 
 
-global level := 1
+global level := 0
 global highlevel := 6
 
 global p:="H:/ElectronProject/piano/src/assets/audio3/"
@@ -30,23 +30,23 @@ startNum := 24
 
 ;不用 g 与 v 24
 $1::
-level := 1
+level := 0
 SendRaw, 1
 return 
 $2::
-level := 2
+level := 1
 SendRaw 2
 return
 $3::
-level := 3
+level := 2
 SendRaw 3
 return 
 $4::
-level := 4
+level := 3
 SendRaw 4
 return 
 $5::
-level := 5
+level := 4
 SendRaw 5
 return 
 
@@ -116,7 +116,7 @@ Run % "mpv.exe "  p . level*12+10 . ogg,,Hide
 SendRaw t
 return
 $a:: 
-Run % "mpv.exe "  p . level*12 . ogg,,Hide
+Run % "mpv.exe "  p . level*12+4. ogg,,Hide
 SendRaw a
 return
 $s:: 
