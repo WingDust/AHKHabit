@@ -17,300 +17,304 @@
 ; Return
 
 
-$2::
-  KeyWait, 2
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main2, -1
-  Else
-    SendInput 2 
-Return
-
-
-
-
-$3::
-  KeyWait, 3
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main3, -1
-  Else
-    SendInput 3 
-Return
-
-main3:
-    SendRaw #
-Return
-
-
-
-$4::
-  KeyWait, 4
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main4, -1
-  Else
-    SendInput 4 
-Return
-
-main4:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw $
-Return
-
-
-
-$5::
-  KeyWait, 5
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main5, -1
-  Else
-    SendInput 5
-Return
-
-main5:
-    SendRaw,`% ;`转义
-Return
-
-
-
-$6::
-  KeyWait, 6
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main6, -1
-  Else
-    SendInput 6 
-Return
-
-main6:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw ^
-Return
-
-
-
-$7::
-  KeyWait, 7
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main7, -1
-  Else
-    SendInput 7 
-Return
-
-main7:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw &
-Return
-
-
-
-$8::
-  KeyWait, 8
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main8, -1
-  Else
-    SendInput 8 
-Return
-
-main8:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw *
-Return
-
-$9::
-  KeyWait, 9
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main9, -1
-  Else
-    SendInput 9 
-Return
-
-main9:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw (
-Return
-
-
-$0::
-  KeyWait, 0
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main0, -1
-  Else
-    SendInput 0 
-Return
-
-main0:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw )
-Return
-
-
-$-::
-  KeyWait, -
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main-, -1
-  Else
-    SendInput - 
-Return
-
-main-:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw _
-Return
-
-
-
-$=::
-  KeyWait, `=
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, maineq, -1
-  Else
-    SendInput `= 
-Return
-
-maineq:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw +
-Return
-
-
-$[::
-  KeyWait, [
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main[, -1
-  Else
-    SendInput [ 
-Return
-
-main[:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw {
-Return
-
-
-$]::
-  KeyWait, ]
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, main], -1
-  Else
-    SendInput ] 
-Return
-
-main]:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw }
-Return
-
-
-$;::
-  KeyWait, `;
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, mainsp, -1
-  Else
-    SendInput `; 
-Return
-
-mainsp:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw :
-Return
-
-
-$'::
-  KeyWait, '
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, mainqutoe, -1
-  Else
-    SendInput ' 
-Return
-
-mainqutoe:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw "
-Return
-
-
-$\::
-  KeyWait, \
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, mainop, -1
-  Else
-    SendInput \
-Return
-
-mainop:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw |
-Return
-
-
-$,::
-  KeyWait, `,
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, maind, -1
-  Else
-    SendInput `, 
-Return
-
-maind:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw <
-Return
-
-
-$.::
-  KeyWait, .
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, maindian, -1
-  Else
-    SendInput . 
-Return
-
-maindian:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw >
-Return
-
-
-$/::
-  KeyWait, /
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, mainposix, -1
-  Else
-    SendInput /
-Return
-
-mainposix:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw ?
-Return
-
-
-$`::
-  KeyWait, ``
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, maink, -1
-  Else
-    SendInput ``
-Return
-
-maink:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw ~
-Return
-
-
-
-$g::
-  KeyWait, g
-  If (A_TimeSinceThisHotkey > 300)
-    SetTimer, maing, -1
-  Else
-    ;SendInput g
-    SendInput, % GetKeyState("CapsLock", "G") ? "G" : "g"
-Return
-
-maing:
-    ;Tooltip 输入T ,1920,1080
-    SendRaw G
-Return
+; $2::
+;   KeyWait, 2
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main2, -1
+;   Else
+;     SendInput 2 
+; Return
+
+; main2:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw @
+; Return
+
+
+
+; $3::
+;   KeyWait, 3
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main3, -1
+;   Else
+;     SendInput 3 
+; Return
+
+; main3:
+;     SendRaw #
+; Return
+
+
+
+; $4::
+;   KeyWait, 4
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main4, -1
+;   Else
+;     SendInput 4 
+; Return
+
+; main4:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw $
+; Return
+
+
+
+; $5::
+;   KeyWait, 5
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main5, -1
+;   Else
+;     SendInput 5
+; Return
+
+; main5:
+;     SendRaw,`% ;`转义
+; Return
+
+
+
+; $6::
+;   KeyWait, 6
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main6, -1
+;   Else
+;     SendInput 6 
+; Return
+
+; main6:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw ^
+; Return
+
+
+
+; $7::
+;   KeyWait, 7
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main7, -1
+;   Else
+;     SendInput 7 
+; Return
+
+; main7:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw &
+; Return
+
+
+
+; $8::
+;   KeyWait, 8
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main8, -1
+;   Else
+;     SendInput 8 
+; Return
+
+; main8:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw *
+; Return
+
+; $9::
+;   KeyWait, 9
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main9, -1
+;   Else
+;     SendInput 9 
+; Return
+
+; main9:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw (
+; Return
+
+
+; $0::
+;   KeyWait, 0
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main0, -1
+;   Else
+;     SendInput 0 
+; Return
+
+; main0:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw )
+; Return
+
+
+; $-::
+;   KeyWait, -
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main-, -1
+;   Else
+;     SendInput - 
+; Return
+
+; main-:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw _
+; Return
+
+
+
+; $=::
+;   KeyWait, `=
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, maineq, -1
+;   Else
+;     SendInput `= 
+; Return
+
+; maineq:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw +
+; Return
+
+
+; $[::
+;   KeyWait, [
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main[, -1
+;   Else
+;     SendInput [ 
+; Return
+
+; main[:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw {
+; Return
+
+
+; $]::
+;   KeyWait, ]
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, main], -1
+;   Else
+;     SendInput ] 
+; Return
+
+; main]:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw }
+; Return
+
+
+; $;::
+;   KeyWait, `;
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, mainsp, -1
+;   Else
+;     SendInput `; 
+; Return
+
+; mainsp:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw :
+; Return
+
+
+; $'::
+;   KeyWait, '
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, mainqutoe, -1
+;   Else
+;     SendInput ' 
+; Return
+
+; mainqutoe:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw "
+; Return
+
+
+; $\::
+;   KeyWait, \
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, mainop, -1
+;   Else
+;     SendInput \
+; Return
+
+; mainop:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw |
+; Return
+
+
+; $,::
+;   KeyWait, `,
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, maind, -1
+;   Else
+;     SendInput `, 
+; Return
+
+; maind:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw <
+; Return
+
+
+; $.::
+;   KeyWait, .
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, maindian, -1
+;   Else
+;     SendInput . 
+; Return
+
+; maindian:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw >
+; Return
+
+
+; $/::
+;   KeyWait, /
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, mainposix, -1
+;   Else
+;     SendInput /
+; Return
+
+; mainposix:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw ?
+; Return
+
+
+; $`::
+;   KeyWait, ``
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, maink, -1
+;   Else
+;     SendInput ``
+; Return
+
+; maink:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw ~
+; Return
+
+
+
+; $g::
+;   KeyWait, g
+;   If (A_TimeSinceThisHotkey > 300)
+;     SetTimer, maing, -1
+;   Else
+;     ;SendInput g
+;     SendInput, % GetKeyState("CapsLock", "G") ? "G" : "g"
+; Return
+
+; maing:
+;     ;Tooltip 输入T ,1920,1080
+;     SendRaw G
+; Return
 
 
 ;; $4::
@@ -370,9 +374,9 @@ Return
 ;}
 ;return 
 
-space::
-Send {space}
-return
+; space::
+; Send {space}
+; return
 
 
 ;  [[AutoHotkey] 怎样让空格键做修饰键时是 shift，单独按时仍然是空格？](https://www.v2ex.com/t/390318)
