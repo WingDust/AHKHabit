@@ -3,7 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-!k::  ;; !->alt键   k->字母键k
+;; alt键
+!k::  
 Send {Up}   ;;输入 上 键
 return
 !j::
