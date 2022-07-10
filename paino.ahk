@@ -21,6 +21,7 @@ cmdr(command){
 
 
 global level := 1
+global highlevel := 6
 
 global p:="H:/ElectronProject/piano/src/assets/audio3/"
 global  ogg := ".ogg"
@@ -47,6 +48,17 @@ return
 $5::
 level := 5
 SendRaw 5
+return 
+
+
+$9::
+highlevel := 6
+SendRaw 9
+return 
+
+$0::
+highlevel := 7
+SendRaw 0
 return 
 
 s:="/"
