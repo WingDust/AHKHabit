@@ -116,8 +116,8 @@ Run % "mpv.exe "  p . level*12+14 . ogg,,Hide
 SendRaw t
 return
 $a:: 
-MsgBox % p . level*12+4. ogg
-Run % "mpv.exe "  p . level*12+4. ogg,,Hide
+MsgBox % p . level*12+4 . ogg
+Run % "mpv.exe "  p . level*12+4 . ogg,,Hide
 SendRaw a
 return
 $s:: 
