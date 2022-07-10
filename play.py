@@ -1,5 +1,6 @@
 # import io
 import keyboard
+from qframelesswindow import FramelessWindow
 
 import subprocess
 import os
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     # keyboard.hook_key('a', p)
     # keyboard.on_press_key('a', p)
     # keyboard.wait()
-    # pass
+    pass
     # app = QtWidgets.QApplication(sys.argv)
     # viewer = QtSvg.QSvgWidget()
 
