@@ -1,3 +1,4 @@
+; https://github.com/koirand/vimmer-ahk
 IME_SET(SetSts, WinTitle="A")    {
     ControlGet,hwnd,HWND,,,%WinTitle%
     if  (WinActive(WinTitle))   {
@@ -14,4 +15,3 @@ IME_SET(SetSts, WinTitle="A")    {
           ,  Int, SetSts) ;lParam  : 0 or 1
 }
 ~Esc::IME_SET(0)
-asd
