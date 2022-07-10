@@ -194,15 +194,20 @@ return
 $;:: 
 Run % "mpv.exe "  p . hightlevel*12+5 . ogg,,Hide
 SendRaw `;
+return
 $n:: 
-Run % "mpv.exe "  p . hightlevel*12+5 . ogg,,Hide
+Run % "mpv.exe "  p . hightlevel*12+7 . ogg,,Hide
 SendRaw n
  
 return
 $m:: 
+Run % "mpv.exe "  p . hightlevel*12+9 . ogg,,Hide
 SendRaw m
- 
- 
+return
+
+$m:: 
+Run % "mpv.exe "  p . hightlevel*12+11 . ogg,,Hide
+SendRaw m
 return
 
 ; $h:: 
