@@ -723,6 +723,15 @@ return
 `:: Send {~}
 return
 
+; #if GetKeyState("Ctrl","p")
+^j:: Send Enter
+return
+^h:: Send BS
+return
+f7::r
+return
+
+
 
 
 ;[AutoHotkey三击Alt和双击Alt设为不同快捷键](https://blog.csdn.net/liuyukuan/article/details/5955347) 
