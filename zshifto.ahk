@@ -724,12 +724,8 @@ return
 return
 
 ; #if GetKeyState("Ctrl","p")
-^j:: Send Enter
-return
-^h:: Send BS
-return
-f7::r
-return
+;f7::r
+;return
 
 
 

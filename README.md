@@ -56,3 +56,7 @@
 
 - line 11 is standard rule design (temp can't input Chinese)
 - line 12 is for my design
+# powertoys-run  custom exe
+- ahk2exe ahk => exe  => exe to fixed screen => call
+  - work with current window
+
