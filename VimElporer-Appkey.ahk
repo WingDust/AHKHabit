@@ -120,11 +120,11 @@ Send ^n
 Return
 #IfWinActive
 
-#IfWinActive, ahk_group Quit
-^q::
-Send exit{Enter}
-Return
-#IfWinActive
+;#IfWinActive, ahk_group Quit
+;^q::
+;Send exit{Enter}
+;Return
+;#IfWinActive
 
 #IfWinActive, ahk_exe cmd.exe
 ^p::

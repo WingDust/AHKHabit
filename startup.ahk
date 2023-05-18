@@ -1,7 +1,7 @@
 ;增加自动延时启动程序 5000毫秒就是5秒
 Sleep, 1000
 
-Run ,emacs,,Hide
+;Run ,emacs,,Hide
 ;;Run ,Taskmgr,,Max
 
 ; Sleep, 100000000
@@ -79,7 +79,7 @@ dokill()
 
 
 
-#Persistent
+;#Persistent
 SetTitleMatchMode, 2 ;A window's title can contain WinTitle anywhere inside
 ; GroupAdd, WinMaximize, ahk_class Notepad
 GroupAdd, WinMaximize, ahk_exe Taskmgr.exe

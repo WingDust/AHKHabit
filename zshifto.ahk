@@ -444,12 +444,7 @@ space & m:: Send M
 ; space & \:: Send |
 return
 
-*/
 
-;; 不能将 Return 与 Send 放到同一行
-^q::Send,!{f4}
-Return
-; ^q::MsgBox hotkey 
 
 
 ;;  ctrl space 按住 
@@ -744,3 +739,10 @@ return
 ; return
 
 
+
+;; 不能将 Return 与 Send 放到同一行
+;^q::
+;MsgBox 1
+;Send,!{f4}
+;return
+; ^q::MsgBox hotkey 
