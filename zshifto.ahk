@@ -380,21 +380,21 @@ return
 
 
 ;  [[AutoHotkey] 怎样让空格键做修饰键时是 shift，单独按时仍然是空格？](https://www.v2ex.com/t/390318)
-;Space Up:: 
-;    SendInput {Shift Up} 
-;    if ( A_PriorKey = "Space"  and GetKeyState("Ctrl") = 0 ) 
-;    ;if (GetKeyState("Ctrl") = 0 and GetKeyState("Shift") = 0 and GetKeyState("Alt") = 0) 
-;    { 
-;      Tooltip 输入T ,1920,1080
-;        if (sLButtonClicked = 1) 
-;        { 
-;            sLButtonClicked = 0 
-;        } 
-;        else 
-;        { 
-;            SendInput {Shift}{Space} 
-;        } 
-;    } 
+Space Up:: 
+    SendInput {Shift Up} 
+    if ( A_PriorKey = "Space"  and GetKeyState("Ctrl") = 0 ) 
+    ;if (GetKeyState("Ctrl") = 0 and GetKeyState("Shift") = 0 and GetKeyState("Alt") = 0) 
+    { 
+      Tooltip 输入T ,1920,1080
+        if (sLButtonClicked = 1) 
+        { 
+            sLButtonClicked = 0 
+        } 
+        else 
+        { 
+            SendInput {Shift}{Space} 
+        } 
+    } 
 ;    Return 
 ; space & 1:: Send !
 ; space & 2:: Send @
