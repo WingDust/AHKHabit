@@ -157,5 +157,9 @@ return
 RWin::AppsKey
 return
 
-f7::r
+;f7::r
+;return
+
+RShift::Up
+; Send {Up}   ;;输入 上 键
 return
