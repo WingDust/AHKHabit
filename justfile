@@ -1,0 +1,2 @@
+hide:
+    autohotkey hmouse.ahk

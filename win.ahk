@@ -1,0 +1,4 @@
+
+
+CapsLock & Right::
+  WinMove 
