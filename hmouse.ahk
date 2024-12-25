@@ -22,7 +22,7 @@ HideM()
     global cx := xpos
     global cy := ypos
 
-    ToolTip(cx)
+    ToolTip(cx "," cy)
 	; SetTimer(()=>ToolTip(global cx, , , ), -10000)
     SetTimer () => ToolTip(), -5000
   }
