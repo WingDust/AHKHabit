@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+;   @script     : windows-updates-pause.reg
+;   @author     : Aetherinox
+;   @url        : https://github.com/Aetherinox/Windows-Update-Killer
+;
+;   A script to pause Windows Updates for a long period of time.
+;
+;   User can un-pause updates by opening the 'Windows Update' window.
+;   You can also access that window by opening your start menu, select 'Run'
+;   and type
+;        ms-settings:windowsupdate
+;
+;   You can also re-enable updates by executing the other file included
+;   in the repo URL above:
+;       windows-updates-unpause.reg
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"PauseFeatureUpdatesStartTime"="2025-01-01T00:00:00Z"
+"PauseFeatureUpdatesEndTime"="2051-12-31T00:00:00Z"
+"PauseQualityUpdatesStartTime"="2025-01-01T00:00:00Z"
+"PauseQualityUpdatesEndTime"="2051-12-31T00:00:00Z"
+"PauseUpdatesStartTime"="2025-01-01T00:00:00Z"
+"PauseUpdatesExpiryTime"="2051-12-31T00:00:00Z"
+"ActiveHoursStart"=dword:0000000d
+"ActiveHoursEnd"=dword:00000007
+"FlightSettingsMaxPauseDays"=dword:00002727
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+"FailureActions"=hex:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+"NoAUShutdownOption"=dword:00000001
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureStatus"=dword:00000001
+"PausedQualityStatus"=dword:00000001
+"PausedQualityDate"="2025-01-01T00:00:00Z"
+"PausedFeatureDate"="2025-01-01T00:00:00Z"
