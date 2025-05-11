@@ -1,9 +1,11 @@
 add_rules("mode.debug", "mode.release")
 
 target("idle-computer")
-    set_kind("binary")
+    set_kind("shared")
+    -- set_kind("binary")
     add_syslinks("user32")
     add_files("src/*.cpp")
+    add_shflags("-def:D:/soft/AHKHabit/idle-computer/idle-time.def")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io

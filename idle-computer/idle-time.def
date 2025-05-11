@@ -1,0 +1,4 @@
+LIBRARY "idle-time"
+EXPORTS
+    idle_time
+
